@@ -17,6 +17,7 @@ jobs:
         uses: sec3dev/pro-action@v1
         with:
           sec3-token: ${{ secrets.SEC3_TOKEN }}
+          path: "insecure"
       - name: Upload Sarif Report
         uses: github/codeql-action/upload-sarif@v1
         with:
