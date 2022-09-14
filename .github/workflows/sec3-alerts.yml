@@ -18,6 +18,7 @@ jobs:
         with:
           sec3-token: ${{ secrets.SEC3_TOKEN }}
           path: "insecure"
+          hide-report-link: true
       - name: Upload Sarif Report
         uses: github/codeql-action/upload-sarif@v1
         with:
